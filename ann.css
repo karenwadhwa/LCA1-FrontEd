@@ -1,0 +1,29 @@
+.announcement-bar {
+    background-color: #ffe600; 
+    color: #333; 
+    text-align: center;
+    font-size: 14px;
+    font-weight:700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: To make it move horizontally */
+.announcement-bar p {
+    margin: 0;
+    animation: slide 15s linear infinite;
+}
+
+/* Animation for horizontal scrolling */
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
